@@ -33,6 +33,12 @@
         </header>
 
         <nav class="menu">
+          <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="brand">WPU Merch</div>
           <ul class="menu-list">
             <li><a href="Home">Home</a></li>
@@ -41,8 +47,59 @@
             <li><a href="Gallelry">Gallery</a></li>
           </ul>
         </nav>
-        
-        
+
+        <section class="services">
+          <div class="service">
+            <div class="icon">🧑‍💻</div>
+            <h3>Tutorial</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quasi sunt. Dolorem cumque sunt sint!
+            </p>
+          </div>
+          <div class="service">
+            <div class="icon">🎓</div>
+            <h3>Online Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quasi sunt. Dolorem cumque sunt sint!
+            </p>
+          </div>
+          <div class="service">
+            <div class="icon">🎓</div>
+            <h3>Podcast</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quasi sunt. Dolorem cumque sunt sint!
+            </p>
+          </div>
+          <div class="service">
+            <div class="icon">🎓</div>
+            <h3>Merch</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quasi sunt. Dolorem cumque sunt sint!
+            </p>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <h2>Gallery</h2>
+          <img src="https://source.unsplash.com/random/200x200" alt="">
+          <img src="https://source.unsplash.com/random/201x201" alt="">
+          <img src="https://source.unsplash.com/random/202x202" alt="">
+          <img src="https://source.unsplash.com/random/203x203" alt="">
+          <img src="https://source.unsplash.com/random/204x204" alt="">
+          <img src="https://source.unsplash.com/random/205x205" alt="">
+          <img src="https://source.unsplash.com/random/206x206" alt="">
+          <img src="https://source.unsplash.com/random/207x207" alt="">
+          <img src="https://source.unsplash.com/random/208x208" alt="">
+        </section>
+             
     </div>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('slide');
+        });
+    </script>
   </body>
 </html>
